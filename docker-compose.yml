@@ -1,0 +1,18 @@
+version: '3'
+
+volumes:
+  eva_data:
+    driver_opts:
+      o: bind
+      type: none
+      device: /Users/rmazurit/Documents/linux_for_eva/eva_data
+
+services:
+  linux_for_eva:
+    container_name: linux_for_eva
+    image: linux_for_eva
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - eva_data:/home

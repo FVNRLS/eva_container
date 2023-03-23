@@ -2,6 +2,7 @@ name = linux_for_eva
 
 # start the Docker Compose services using the configuration
 all:
+	@./init_docker.sh
 	@printf "Starting configuration ${name}...\n"
 	@docker-compose up
 

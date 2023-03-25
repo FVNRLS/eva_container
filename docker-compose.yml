@@ -5,7 +5,7 @@ volumes:
     driver_opts:
       o: bind
       type: none
-      device: /Users/rmazurit/Documents/linux_for_eva/eva_data
+      device: /Users/${USER}/Documents/eva_container/eva_data
 
 services:
   linux_for_eva:
